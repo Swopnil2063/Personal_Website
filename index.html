@@ -72,6 +72,9 @@
   .btn-ghost:hover{transform:translateY(-2px); background:var(--ink); color:#fff;}
 
   /* avatar + floating ring */
+  .hero-social{display:flex; gap:10px; flex-wrap:wrap; margin-top:22px;}
+  .hero-social a{font-family:var(--font-mono); font-size:0.75rem; border:1px solid var(--line); padding:8px 14px; border-radius:20px; color:var(--ink-soft); background:#fff; transition:all 0.2s;}
+  .hero-social a:hover{border-color:var(--accent); color:var(--accent); transform:translateY(-2px);}
   .avatar-stage{position:relative; width:100%; aspect-ratio:1/1; max-width:420px; margin:0 auto;}
   .avatar-blob{position:absolute; inset:8%; background:linear-gradient(135deg, var(--accent-soft), var(--amber-soft)); border-radius:50%; display:flex; align-items:center; justify-content:center; overflow:hidden;}
   .avatar-blob img{width:100%; height:100%; object-fit:cover;}
@@ -141,23 +144,6 @@
   @media (max-width:900px){.card-grid{grid-template-columns:1fr 1fr;}}
   @media (max-width:600px){.card-grid{grid-template-columns:1fr;}}
 
-  /* ---- CONTACT ---- */
-  #contact{border-top:1px solid var(--line); background:var(--bg-card);}
-  .contact-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:50px;}
-  .field{margin-bottom:18px;}
-  .field label{display:block; font-family:var(--font-mono); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-soft); margin-bottom:8px;}
-  .field input, .field textarea{width:100%; border:1.5px solid var(--line); border-radius:10px; padding:14px 16px; font-family:var(--font-body); font-size:0.95rem; background:#fff; color:var(--ink);}
-  .field input:focus, .field textarea:focus{outline:none; border-color:var(--accent);}
-  .contact-info{background:var(--ink); color:#fff; border-radius:18px; padding:34px;}
-  .contact-info h3{font-family:var(--font-display); font-size:1.2rem; margin-bottom:18px;}
-  .info-row{padding:14px 0; border-top:1px solid rgba(255,255,255,0.14);}
-  .info-row:first-of-type{border-top:none;}
-  .info-row span{display:block; font-family:var(--font-mono); font-size:0.68rem; text-transform:uppercase; color:var(--amber); margin-bottom:4px;}
-  .social-row{display:flex; gap:12px; margin-top:22px; flex-wrap:wrap;}
-  .social-row a{font-family:var(--font-mono); font-size:0.75rem; border:1px solid rgba(255,255,255,0.25); padding:8px 14px; border-radius:20px; transition:background 0.2s;}
-  .social-row a:hover{background:var(--accent); border-color:var(--accent);}
-  @media (max-width:800px){.contact-grid{grid-template-columns:1fr;}}
-
   footer{padding:34px 0; font-family:var(--font-mono); font-size:0.72rem; color:var(--ink-soft); display:flex; justify-content:space-between; border-top:1px solid var(--line); flex-wrap:wrap; gap:10px;}
 
   @media (prefers-reduced-motion: reduce){
@@ -176,7 +162,6 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -190,7 +175,14 @@
         <div class="role">Tech Lead @ IEEE Open Project Space · Former National-Level Swimmer · 2024 Valedictorian</div>
         <div class="hero-ctas" style="margin-top:34px;">
           <a href="#portfolio" class="btn btn-primary">View Portfolio →</a>
-          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          <a href="mailto:swopnil.s1717@gmail.com" class="btn btn-ghost">Email Me</a>
+        </div>
+        <div class="hero-social">
+          <a href="mailto:swopnil.s1717@gmail.com">Email</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Strava</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
         </div>
       </div>
       <div class="avatar-stage">
@@ -351,44 +343,6 @@
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="section-tag">Let's talk</div>
-      <h2 class="section-title">Contact Me</h2>
-    </div>
-    <div class="contact-grid">
-      <form onsubmit="return false;">
-        <div class="field">
-          <label for="cname">Name</label>
-          <input type="text" id="cname" placeholder="Your name">
-        </div>
-        <div class="field">
-          <label for="cemail">Email</label>
-          <input type="email" id="cemail" placeholder="you@example.com">
-        </div>
-        <div class="field">
-          <label for="cmsg">Message</label>
-          <textarea id="cmsg" rows="5" placeholder="Say hello..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message →</button>
-      </form>
-
-      <div class="contact-info">
-        <h3>Reach me directly</h3>
-        <div class="info-row"><span>Email</span>you@example.com</div>
-        <div class="info-row"><span>Location</span>Austin, TX</div>
-        <div class="social-row">
-          <a href="#">GitHub</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Strava</a>
-          <a href="#">Instagram</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
