@@ -187,7 +187,7 @@
       </div>
       <div class="avatar-stage">
         <div class="avatar-blob">
-          <img src="images/placeholder.jpg" alt="Swopnil Shrestha">
+          <img src="https://picsum.photos/seed/swopnil/800/1000" alt="Swopnil Shrestha">
         </div>
       </div>
     </div>
@@ -202,7 +202,7 @@
     </div>
     <div class="about-grid">
       <div class="about-photo">
-        <img src="images/placeholder.jpg" alt="Swopnil Shrestha">
+        <img src="https://picsum.photos/seed/swopnil/800/1000" alt="Swopnil Shrestha">
         <div class="caption">Austin, TX</div>
       </div>
       <div>
@@ -290,13 +290,14 @@
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="projects">Projects</button>
       <button class="filter-btn" data-filter="hobbies">Hobbies</button>
+      <button class="filter-btn" data-filter="awards">Awards</button>
     </div>
 
     <div class="card-grid" id="cardGrid">
 
       <div class="card" data-cat="projects">
-        <div class="card-media has-video" style="background:var(--accent-soft);" data-preview="videos/placeholder.mp4" data-full="videos/placeholder.mp4">
-          <video class="card-video" muted loop playsinline preload="metadata" src="videos/placeholder.mp4"></video>
+        <div class="card-media has-video" style="background:var(--accent-soft);" data-preview="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" data-full="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">
+          <video class="card-video" muted loop playsinline preload="metadata" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></video>
           <div class="play-badge">▶</div>
         </div>
         <div class="card-body">
@@ -304,6 +305,18 @@
           <div class="card-title">Smart Irrigation System &amp; Adaptive Light Greenhouse</div>
           <div class="card-desc">My first-ever project, built in grade 11 with friends and no teacher supervision. Nepal has extensive irrigation but almost no automation, so we built a prototype on hardwood with real fertile soil and crops — a DHT sensor read soil moisture and triggered a sprinkler automatically, cutting out redundant manual work. We later extended it into an adaptive greenhouse: LED lighting adjusted to the plant's growth stage, and ventilation kicked in automatically based on internal humidity and temperature. The greenhouse itself was built from precisely measured and cut glass panels bonded with silica — getting the silica bonding right was the hardest part of the whole build.</div>
           <a href="#" class="card-link" data-video-trigger>View More →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="projects">
+        <div class="card-media" style="background:var(--accent-soft);">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M2 12h4l2-7 4 14 3-10 2 6h5" stroke="#5B2EFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">Research · In Preparation</div>
+          <div class="card-title">FPGA/PWM Tradeoffs</div>
+          <div class="card-desc">Undergraduate research alongside a PhD student, characterizing tradeoffs in FPGA-based PWM generation — edge-aligned vs. center-aligned switching, resolution, duty cycle range, dead-time insertion, and the resulting FPGA resource usage for each configuration. Paper currently in preparation.</div>
+          <span class="card-link" style="opacity:0.5; cursor:default;">Link coming soon</span>
         </div>
       </div>
 
@@ -315,6 +328,18 @@
           <div class="card-cat">Swimming</div>
           <div class="card-title">National-Level Competitive Swimmer</div>
           <div class="card-desc">Competed in the highest division of the country at the 9th National Games of Nepal, the product of years of disciplined training and competition.</div>
+          <a href="#" class="card-link">View More →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="projects">
+        <div class="card-media" style="background:var(--amber-soft);">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1.2" fill="#FFB800"/><rect x="13" y="4" width="7" height="7" rx="1.2" stroke="#FFB800" stroke-width="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.2" stroke="#FFB800" stroke-width="1.6"/><rect x="13" y="13" width="7" height="7" rx="1.2" stroke="#FFB800" stroke-width="1.6"/></svg>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">Embedded Systems</div>
+          <div class="card-title">Simon Says Game — Arduino Uno Mini</div>
+          <div class="card-desc">Built with IEEE Open Project Space using an Arduino Uno Mini, LEDs, a shift register, and switches to recreate the classic Simon Says memory game. Each round the light pattern grows by one step, and the player has to replicate the full sequence correctly on the switches to stay in the game — one wrong input ends it.</div>
           <a href="#" class="card-link">View More →</a>
         </div>
       </div>
@@ -339,6 +364,66 @@
           <div class="card-cat">Trekking</div>
           <div class="card-title">Annapurna Circuit &amp; Base Camp</div>
           <div class="card-desc">Completed the full Annapurna Circuit, reaching Annapurna Base Camp at over 13,780 ft and crossing one of the highest passes in the world along the way.</div>
+          <a href="#" class="card-link">View More →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="awards">
+        <div class="card-media">
+          <img src="https://picsum.photos/seed/valedictorian/640/400" alt="Valedictorian award" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="card-body">
+          <div class="card-cat">Academic</div>
+          <div class="card-title">Valedictorian — Class of 2024</div>
+          <div class="card-desc">Graduated top of the class at Premier International IB Continuum School.</div>
+          <a href="#" class="card-link">View More →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="awards">
+        <div class="card-media">
+          <img src="https://picsum.photos/seed/presidentsscholarship/640/400" alt="President's Scholarship" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="card-body">
+          <div class="card-cat">Academic</div>
+          <div class="card-title">President's Scholarship — Texas State University</div>
+          <div class="card-desc">Awarded for academic merit upon admission to Texas State University.</div>
+          <a href="#" class="card-link">View More →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="awards">
+        <div class="card-media">
+          <img src="https://picsum.photos/seed/presidentslist/640/400" alt="President's List" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="card-body">
+          <div class="card-cat">Academic</div>
+          <div class="card-title">President's List — Texas State University (2x)</div>
+          <div class="card-desc">Named to the President's List twice for maintaining a perfect academic record across the semester.</div>
+          <a href="#" class="card-link">View More →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="awards">
+        <div class="card-media">
+          <img src="https://picsum.photos/seed/nationalgames2nd/640/400" alt="National Games 2nd place backstroke" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="card-body">
+          <div class="card-cat">Swimming</div>
+          <div class="card-title">2nd Place — Backstroke, National Games of Nepal</div>
+          <div class="card-desc">Silver medal in backstroke at the 9th National Games of Nepal.</div>
+          <a href="#" class="card-link">View More →</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="awards">
+        <div class="card-media">
+          <img src="https://picsum.photos/seed/nationalgames3rd/640/400" alt="National Games 3rd place butterfly" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="card-body">
+          <div class="card-cat">Swimming</div>
+          <div class="card-title">3rd Place — Butterfly, National Games of Nepal</div>
+          <div class="card-desc">Bronze medal in butterfly at the 9th National Games of Nepal.</div>
           <a href="#" class="card-link">View More →</a>
         </div>
       </div>
